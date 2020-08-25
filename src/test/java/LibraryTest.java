@@ -28,4 +28,9 @@ public class LibraryTest {
     public void hasCapacity() {
         assertEquals(100, library.getCapacity());
     }
+
+    @Test
+    public void hasSpace() {
+        assertEquals(true, library.checkForSpace());
+    }
 }

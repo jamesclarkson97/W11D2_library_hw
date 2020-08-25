@@ -18,6 +18,11 @@ public class Library {
     }
 
     public void addBook(Book book) {
-        this.collection.add(book);
+        if (checkForSpace()) { this.collection.add(book);
+        }
+    }
+
+    public boolean checkForSpace() {
+        return this.capacity > this.collection.size();
     }
 }
