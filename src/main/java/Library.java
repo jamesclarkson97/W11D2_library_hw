@@ -25,4 +25,8 @@ public class Library {
     public boolean checkForSpace() {
         return this.capacity > this.collection.size();
     }
+
+    public Book removeBook() {
+        return this.collection.remove(0);
+    }
 }

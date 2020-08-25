@@ -21,4 +21,10 @@ public class BorrowerTest {
         assertEquals(0, borrower.getCollection());
     }
 
+    @Test
+    public void canBorrowBook() {
+        borrower.borrowBook(library);
+        assertEquals(1, borrower.getCollection());
+    }
+
 }

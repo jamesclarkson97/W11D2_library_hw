@@ -25,6 +25,13 @@ public class LibraryTest {
     }
 
     @Test
+    public void canRemoveBook() {
+        library.addBook(book);
+        library.removeBook();
+        assertEquals(0, library.getCollection());
+    }
+
+    @Test
     public void hasCapacity() {
         assertEquals(100, library.getCapacity());
     }
