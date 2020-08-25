@@ -10,4 +10,8 @@ public class Library {
     public int getCollection() {
         return this.collection.size();
     }
+
+    public void addBook(Book book) {
+        this.collection.add(book);
+    }
 }
